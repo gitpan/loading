@@ -10,11 +10,11 @@ loading - Pragma to exempt a module from loading
 
 =head1 VERSION
 
-Version 1.01
+Version 1.02
 
 =cut
 
-our $VERSION = '1.01';
+our $VERSION = '1.02';
 
 sub unimport {
     my ($client, @modules) = @_;
@@ -83,6 +83,11 @@ you'd have to write in place of a use-statement in the same file
 where Some::Module is defined. That's a convenience, but it makes
 the file more readable. If the purpose of the file is to demonstrate
 various use-statements, the difference may be significant.
+
+=head1 SEE ALSO
+
+C<me::inline> by ETHER covers pretty much the same territorry.
+Thanks to DOLMEN for alerting me to the fact.
 
 =head1 AUTHOR
 
